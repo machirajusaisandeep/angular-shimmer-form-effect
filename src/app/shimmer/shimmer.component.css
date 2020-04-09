@@ -1,0 +1,65 @@
+.shimmer-form {
+    width: 48%;
+    float: left;
+    margin: 0 12px 12px 0;
+}
+.shimmer-form-field {
+  width: 100%;
+}
+
+.shine {
+  background: #f6f7f8;
+  background-image: linear-gradient(to right, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+  background-repeat: no-repeat;
+  background-size: 800px 104px; 
+  display: inline-block;
+  position: relative; 
+    -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards; 
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: placeholderShimmer;
+  -webkit-animation-timing-function: linear;
+  }
+
+.shimmer-backdrop {
+    background:transparent;
+    z-index: 999999;
+    width: 100%;
+    height: 200vh;
+    position: absolute;
+}
+box {
+  height: 104px;
+  width: 100px;
+}
+
+
+.lines {
+  height: 10px;
+  margin-top: 10px;
+  width: 200px; 
+}
+mat-label,input{
+      opacity: 0.4;
+    filter: blur(1px);
+}
+
+.mat-form-field-appearance-fill .mat-form-field-underline::before {
+    background: #cecece !important;
+   
+}
+::ng-deep .mat-select-arrow {
+    color: rgba(0, 0, 0, 0.24);
+}
+
+
+@-webkit-keyframes placeholderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  
+  100% {
+    background-position: 468px 0; 
+  }
+}
+
